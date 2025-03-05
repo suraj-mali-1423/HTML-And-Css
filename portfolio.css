@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+}
+#Item{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+h1{
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FE6807;
+    animation: Suraj 3s infinite; 
+}
+@keyframes Suraj {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+a:hover{
+    color: red;
+}
+.profile-image{
+     width: 400px;
+     height: 500px;
+     border-radius: 100%;
+     object-fit: cover;
+     mix-blend-mode: multiply;
+}
+table{
+     width: 100%;
+     margin-top: 30px;
+     border-collapse: collapse;
+}
+td{
+     text-align: center;
+     vertical-align: middle;
+     padding: 10px;
+}
+td:first-child{
+      text-align: left;
+     padding:40px;
+     width: 70%;
+}
+td h2{
+    font-size: 40px;
+    margin: 0 0 10px 0;
+    color: #00DF82;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+td p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+td:last-child {
+    text-align: center; 
+    width: 50%; 
+}
+td button{
+     padding: 10px 20px;
+     margin: 0 10px;
+     border-radius: 10px;
+     background-color: #FFC01D;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: bold;
+     transition: all 1s ease-in ;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    td:first-child, td:last-child {
+        width: 100%; /* Full width on small screens */
+        text-align: center; /* Center-align content on small screens */
+    }
+
+    img {
+        width: 300px; /* Reduce image size on small screens */
+        height: 300px;
+    }
+}
+footer {
+ /* Dark background for footer */
+    color: white; /* Text color */
+    text-align: left; /* Center-align content */
+    padding: 20px; /* Add padding */
+    margin-top: 30px; /* Space above the footer */
+}
+
+footer p {
+    margin: 0 0 10px 0; /* Margin below the text */
+    font-size: 18px;
+}
+
+footer a {
+    color: balck; /* LinkedIn logo color */
+    text-decoration: none; /* Remove underline */
+    font-size: 30px; /* Size of the LinkedIn logo */
+    transition: color 0.3s ease-in-out; 
+    transform: scale(2);/* Smooth hover effect */
+}
+
+footer a:hover{
+      color: red;
+}
+
