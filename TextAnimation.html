@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typewriter in Brackets</title>
+  <style>
+    body {
+      background: #111;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      padding: 2rem;
+    }
+
+    .typewriter::before {
+      content: "<";
+    }
+
+    .typewriter::after {
+      content: "|>";
+      animation: blink 1s step-end infinite;
+    }
+
+    .typewriter {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border: none;
+      font-size: 1.2rem;
+      animation: typing 4s steps(30, end) forwards;
+      width: 0ch;
+    }
+
+    @keyframes typing {
+      from { width: 0ch; }
+      to { width: 28ch; } /* Adjust based on the text length */
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="typewriter">Loading restaurant menu...</div>
+
+</body>
+</html>
